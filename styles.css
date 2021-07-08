@@ -7,11 +7,14 @@ body {
 }
 
 header {
-  background-image: url(images/food-1406879_1920.jpg);
+  opacity: 1;
+  background-color: #000000a4;
+  background-image: url(images/hero.jpg);
+  background-blend-mode: overlay;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 header .container {
@@ -327,16 +330,16 @@ header .container .header_content button:hover {
 }
 
 .contact {
-  height: 500px;
+  height: 80%;
   opacity: 1;
-  background: black;
+  background: rgba(0, 0, 0, 0.651);
   background-image: url(images/contact.png);
-  background-blend-mode: lighten;
+  background-blend-mode: overlay;
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
-  margin: 100px 10px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -345,14 +348,14 @@ header .container .header_content button:hover {
 }
 
 .contact .container .row h2 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   color: white;
 }
 
 .contact .container .row p {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500px;
 }
 
@@ -361,6 +364,12 @@ header .container .header_content button:hover {
   padding: 10px 20px;
   margin: 10px 10px;
   color: black;
+}
+
+.contact .container .row .contact-form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none !important;
 }
 
 .contact .container .row .contact-form textarea {
@@ -386,9 +395,46 @@ header .container .header_content button:hover {
   color: orange;
 }
 
-.contact .container .row .contact-form :focus {
-  border: 1px solid #ffffff !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.contact .container .row .form-check {
+  color: white;
+}
+
+.contact .container .row .form-check input {
+  margin-top: 30px;
+  border: 1px solid white;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.contact .container .row button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.contact .container .row button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#C7451C), to(#450028));
+  color: #ffffff;
+  padding-top: 60px;
+}
+
+footer .footer_top .row p {
+  text-align: justify;
+}
+
+footer .footer_top .row h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 2;
 }
 /*# sourceMappingURL=styles.css.map */
