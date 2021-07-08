@@ -6,6 +6,25 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+nav ul li a {
+  color: #000000 !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav ul li .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#e52d27), color-stop(51%, #b31217), to(#e52d27));
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  margin-left: 20px;
+  font-size: 16px !important;
+  text-align: center;
+  border: none;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 30px !important;
+}
+
 header {
   opacity: 1;
   background-color: #000000a4;
@@ -25,6 +44,20 @@ header .container .header_content h1 {
   font-size: 50px;
   font-weight: 700;
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  header .container .header_content h1 {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  header .container .header_content ul li {
+    font-style: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-indent: 5px;
+  }
 }
 
 header .container .header_content ul {
@@ -267,7 +300,8 @@ header .container .header_content button:hover {
 }
 
 .review {
-  margin-top: 50px;
+  background-color: #e0e0e0;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -294,7 +328,7 @@ header .container .header_content button:hover {
 .review .card-group .card img {
   margin-left: 20px;
   width: 100px;
-  border-radius: 100px;
+  border-radius: 50px !important;
 }
 
 .review .card-group .card .card-body {
@@ -339,7 +373,6 @@ header .container .header_content button:hover {
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
-  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -430,11 +463,72 @@ footer {
 
 footer .footer_top .row p {
   text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 footer .footer_top .row h3 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 2;
+}
+
+footer .footer_top .row .input-group {
+  border: 4px solid white !important;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+footer .footer_top .row .input-group input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none !important;
+}
+
+footer .footer_bottom {
+  border-top: 1px solid #fff;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+footer .footer_bottom p {
+  font-size: 18px;
+}
+
+footer .footer_bottom i {
+  color: #ffffff;
+  font-size: 36px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .learns .container .card-group .card .card-body h2 {
+    font-size: 30px;
+  }
+  .learns .container .card-group .card .card-body h3 {
+    font-size: 18px;
+  }
+  .learns .container .card-group .card .card-body p {
+    font-size: 14px;
+  }
+  .learns .container .card-group .card .card-body ul {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .patner {
+    display: none;
+  }
+  .Courses .container .content h2 {
+    font-size: 30px;
+  }
+  .iframe {
+    margin-top: 20px;
+  }
+  .content {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
